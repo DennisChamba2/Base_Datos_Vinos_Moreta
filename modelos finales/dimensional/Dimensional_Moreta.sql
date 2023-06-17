@@ -87,9 +87,9 @@ create table HECHOS_ENTREGAS (
    ID_CIUDAD            INT4                 not null,
    TIEMPO_ID            INT4                 not null,
    ID_CLIENTE           INT4                 not null,
-   COSTO_ENVIO          FLOAT5               not null,
+   COSTO_ENVIO          FLOAT(5)               not null,
    PAQUETES_ENVIADOS    INT4                 not null,
-   INGRESOS             FLOAT5               not null,
+   INGRESOS             FLOAT(5)               not null,
    PORCENTAJE_ENTREGAS_EXITOSAS FLOAT4               not null,
    constraint PK_HECHOS_ENTREGAS primary key (ID_CIUDAD, TIEMPO_ID, ID_CLIENTE)
 );
