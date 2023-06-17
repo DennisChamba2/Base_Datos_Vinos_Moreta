@@ -199,9 +199,9 @@ create table PAQUETE (
    DIRECCION_PAQUETE    CHAR(100)            not null,
    FECHA_ENVIO          DATE                 not null,
    ESTADO               CHAR(40)             not null,
-   COSTO_ENVIO          FLOAT5               not null,
+   COSTO_ENVIO          FLOAT(5)               not null,
    FECHA_ENTREGA        DATE                 not null,
-   PRECIO               FLOAT5               not null,
+   PRECIO               FLOAT(5)               not null,
    constraint PK_PAQUETE primary key (CODIGO_PAQUETE)
 );
 
